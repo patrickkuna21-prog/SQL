@@ -1,0 +1,1 @@
+SELECT c.customer_name, c.customer_id, p.product_name, e.country FROM customers c JOIN products p ON c.customer_id = p.customer_id JOIN exports e ON c.customer_id = e.customer_id WHERE c.customer_name LIKE 'a%' AND c.customer_name LIKE '%or%';
